@@ -8,7 +8,7 @@
 ### links
 GH repo: [https://github.com/nozky/cpnt262-a4](https://github.com/nozky/cpnt262-a4)
 
-Heroku Url: []()
+Heroku Url: [https://norvs-cpnt262-a4.herokuapp.com/https://norvs-cpnt262-a4.herokuapp.com/]()
 
 ---
 ### Author
