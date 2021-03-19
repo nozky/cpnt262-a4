@@ -2,7 +2,7 @@
 
 
 // fetch from server
-fetch('http://localhost:3000/api/v0/gallery')
+fetch('/api/v0/gallery')
   .then( res => res.json())
   .then( data => data!=0? displayImages(data):noImagesFound())
   
