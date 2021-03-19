@@ -3,13 +3,10 @@ const router = express.Router()
 
 // import data
 const gallery = require('../../data/gallery')
-// const gallery = require('gallery')
-
 
 // serve json data
 router.get('/gallery',(req,res)=>{
-  res.status(200)
-  res.json(gallery)
+  res.status(200).json(gallery)
 })
 
 module.exports = router

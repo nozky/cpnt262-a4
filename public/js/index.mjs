@@ -1,17 +1,17 @@
-'use strict';
+// This is a module. No need to put 'use strict'
+
 
 // fetch from server
 fetch('http://localhost:3000/api/v0/gallery')
   .then( res => res.json())
-  .then ( data => displayImages(data))
-
+  .then( data => data!=0? displayImages(data):noImagesFound())
+  
 
 // callBack to display images
 const displayImages = (images) => {
   
   const imageGallery = document.querySelector('.wrapper .gallery');
-  imageGallery.innerHTML='';
-
+ 
   images.forEach(image => {
 
     // image container
@@ -62,3 +62,9 @@ const displayImages = (images) => {
 
 }  
 
+
+
+// No images found callback
+const noImagesFound = () => {
+  const imageGallery = document.querySelector('.wrapper .gallery').innerHTML = `<p>No images Found</p>`
+}
