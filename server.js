@@ -31,7 +31,7 @@ app.use((req, res) => {
     status: '404',
     message: 'File Not found',
   }
-  res.render('/pages/404', {data})
+  res.render('pages/404', {data})
 });
 
 
