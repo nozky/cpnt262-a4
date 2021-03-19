@@ -14,7 +14,7 @@ app.use(cors())
 app.set('view engine','ejs')
 
 // setting static folder
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'/public')))
 
 // routing to index
 app.use('/',index)
@@ -31,10 +31,10 @@ app.use((req, res) => {
     status: '404',
     message: 'File Not found',
   }
-  res.render('pages/404', {data})
+  res.render('/pages/404', {data})
 });
 
 
 //Listening port  
-const PORT = process.env.Port || 3000
+const PORT = process.env.PORT || 3000
 app.listen(PORT, ()=> { console.log(`Listening on port ${PORT}`) })
