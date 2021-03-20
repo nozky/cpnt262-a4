@@ -2,14 +2,18 @@ const express = require('express')
 const path = require('path')
 const cors = require('cors')
 
-
-// routes
-const index = require('./routes/index')
-const v0 = require('./routes/api/v0')
+// no use for now, i will use this on assignment 5
+// i just put it here because i was try out some stuff
+require('dotenv').config()
 
 // init
 const app = express()
 app.use(cors())
+
+
+// routes
+const index = require('./routes/index')
+const v0 = require('./routes/api/v0')
 
 // setting view engine
 app.set('view engine','ejs')
