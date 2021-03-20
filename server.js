@@ -3,7 +3,7 @@ const path = require('path')
 const cors = require('cors')
 
 // no use for now, i will use this on assignment 5
-// i just put it here because i was try out some stuff
+// i just put it here because i was trying out some stuff
 require('dotenv').config()
 
 // init
