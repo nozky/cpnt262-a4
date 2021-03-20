@@ -1,5 +1,6 @@
 # Assignment 4: JSON gallery endpoint with fetch
 
+I use `Dayjs module` to calculate the days from the last time i updated the page content.  
 
 >Note: Attribution is already included in the Gallery.
 
