@@ -16,7 +16,6 @@ body{
   width: 100vw;
   min-height: 100vh;
   line-height: 1.5rem;
-  
 }
 
 body h1{
@@ -58,8 +57,6 @@ nav ul li a{
   color: white;
 }
 
-
-
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -88,11 +85,9 @@ nav ul li a{
   margin: 0.5rem;
 }
 
-
 .wrapper .gallery .image-container figure{
   margin-right: 1rem;
 }
-
 
 .wrapper .gallery .image-container figure img{
   object-fit: cover;
@@ -118,7 +113,6 @@ nav ul li a{
   margin-top: 0.8rem;
 }
 
-
 /* push footer, if array contain only one object. */
 .push{
   flex: 1;
@@ -132,7 +126,6 @@ footer{
   background-color: #171718;
   
 }
-
 
 
 /* mobile */
@@ -152,7 +145,6 @@ footer{
   .wrapper .gallery .image-container .info{
     min-width: 100%;
   }
-
 }
 
 

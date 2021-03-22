@@ -10,7 +10,6 @@ require('dotenv').config()
 const app = express()
 app.use(cors())
 
-
 // routes
 const index = require('./routes/index')
 const v0 = require('./routes/api/v0')
@@ -27,7 +26,6 @@ app.use('/',index)
 // routing to api/v0
 app.use('/api/v0',v0)
 
-
 // file not found
 app.use((req, res) => {
   res.status(404)
@@ -38,7 +36,6 @@ app.use((req, res) => {
   }
   res.render('pages/404', {data})
 });
-
 
 //Listening port  
 const PORT = process.env.PORT || 3000
